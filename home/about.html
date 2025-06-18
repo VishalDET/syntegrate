@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Mirrored from mono.flatheme.net/pages/about-me-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 26 May 2025 10:48:45 GMT -->
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+        <meta name="keywords" content="">
+		<title>About Us - Syntegrate</title>
+		<!-- Favicon -->
+        <link href="../assets/images/favicon.png" rel="shortcut icon">
+		<!-- CSS -->
+		<link href="../assets/plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
+		<link href="../assets/plugins/owl-carousel/owl.carousel.min.css" rel="stylesheet">
+		<link href="../assets/plugins/owl-carousel/owl.theme.default.min.css" rel="stylesheet">
+		<link href="../assets/plugins/magnific-popup/magnific-popup.min.css" rel="stylesheet">
+		<link href="../assets/plugins/scrollcue/scrollcue.css" rel="stylesheet">
+		<link href="../assets/plugins/swiper/swiper-bundle.min.css" rel="stylesheet">
+		<link href="../assets/css/theme.min.css" rel="stylesheet">
+		<!-- Fonts/Icons -->
+		<link href="../assets/plugins/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+		<link href="../assets/plugins/font-awesome/css/all.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+		<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+		<style>
+			.grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            /* margin-top: 2rem; */
+        }
+
+        .grid-top {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .grid-bottom {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 24px;
+            padding: 3rem 2.5rem;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(135deg, #05477f 0%, #41729c 100%);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.6s ease;
+        }
+
+        .card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            background: rgba(255, 255, 255, 1);
+        }
+
+        .icon-wrapper {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #05477f 0%, #41729c 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+        }
+
+        .icon-wrapper::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transform: rotate(45deg) translateX(-100%);
+            transition: transform 0.6s ease;
+        }
+
+        .card:hover .icon-wrapper::after {
+            transform: rotate(45deg) translateX(100%);
+        }
+
+        .card:hover .icon-wrapper {
+            transform: rotate(5deg) scale(1.1);
+        }
+
+        .icon-wrapper i {
+            font-size: 2.5rem;
+            color: white;
+            z-index: 1;
+        }
+
+        .card-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #4a5568;
+            opacity: 0.9;
+        }
+
+        .values-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 1rem;
+        }
+
+        .values-list li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            position: relative;
+            padding-left: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .values-list li:last-child {
+            border-bottom: none;
+        }
+
+        .values-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 12px;
+            height: 12px;
+            background: linear-gradient(135deg, #05477f 0%, #41729c 100%);
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .values-list li:hover {
+            padding-left: 2.5rem;
+            color: #2d3748;
+        }
+
+        .values-list li:hover::before {
+            transform: translateY(-50%) scale(1.3);
+        }
+
+        .values-title {
+            font-weight: 600;
+            color: #2d3748;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .card {
+                padding: 2rem 1.5rem;
+            }
+            
+            .container {
+                padding: 0 1rem;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .card:nth-child(1) { animation-delay: 0.1s; }
+        .card:nth-child(2) { animation-delay: 0.2s; }
+        .card:nth-child(3) { animation-delay: 0.3s; }
+		</style>
+	</head>
+	<body data-preloader="1">
+
+		<div class="header center header-boxed">
+			<div class="container">
+				<!-- Logo -->
+				<div class="header-logo">
+					<!-- <h3 class="uppercase letter-spacing-1"><a href="https://mono.flatheme.net/">Syntegrate</a></h3> -->
+					 <img src="../assets/images/logo/Syntegrate Teleinfra LLP - Logo.png" alt="" srcset="">
+				</div>
+				<!-- Menu -->
+				<div class="header-menu">
+					<ul class="nav">
+						<li class="nav-item">
+							<a class="nav-link " href="Home.html">Home</a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link" href="Services.html">Services</a>
+							
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="career.html">Career</a>
+							
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active-menu" href="about.html">About Us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact Us</a>
+							
+						</li>
+						
+					</ul>
+				</div>
+				<!-- Menu Extra -->
+				<div class="header-menu-extra">
+					<ul class="list-inline-sm">
+						<li><a href="#"><i class="bi bi-facebook"></i></a></li>
+						<li><a href="#"><i class="bi bi-twitter-x"></i></a></li>
+						<li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+					</ul>
+				</div>
+				<!-- Menu Toggle -->
+				<button class="header-toggle">
+					<span></span>
+				</button>
+			</div><!-- end container -->
+		</div>
+		<!-- end Header -->
+
+		<!-- Scroll to top button -->
+		<div class="scrolltotop icon-lg">
+			<a class="button-circle button-circle-md button-circle-dark" href="#"><i class="bi bi-arrow-up-short"></i></a>
+		</div>
+
+		<div class="section-xl bg-image parallax" data-bg-src="../assets/images/about.jpg">
+			<div class="bg-dark-06 section-divider-wavesOpacity-bottom">
+				<div class="container text-center">
+					<h1 class="fw-light m-0">About Us</h1>
+				</div><!-- end container -->
+			</div>
+		</div>
+
+		<div class="section">
+			<div class="container">
+				<div class="row align-items-start g-5">
+					<div class="col-12 col-lg-6">
+                        <h2 class="text-very-peri fw-bold ">Company Overview</h5>
+						<p  data-aos="fade-up" data-aos-duration="1000">Syntegrate Teleinfra LLP (STLLP), formerly known as MK Enterprises, is one of India’s most respected names in passive telecom infrastructure development. Our core operations span Mumbai, Navi Mumbai, and Thane, where we partner with national telecom providers to create robust, scalable, and high-performance networks.</p>
+						<p class="my-3"  data-aos="fade-up" data-aos-duration="1000">We believe in building beyond infrastructure—we build connections, communities, and capacity for the future.</p>
+					</div>
+					<div class="col-12 col-lg-6">
+						<img src="../assets/images/imgs/Syntegrate - about.png" alt="" class="rounded" data-aos="fade-left" data-aos-duration="1000">
+
+					</div>
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</div>
+
+
+		<!-- Services section -->
+		<div class="section">
+			<div class="container">
+				<div class="grid-top">
+					<div class="card" data-aos="fade-up" data-aos-duration="1000">
+						<div class="icon-wrapper">
+							<i class="bi bi-brush"></i>
+						</div>
+						<h5 class="card-title">Mission</h5>
+						<p class="card-text">
+							To deliver innovative, reliable, and sustainable telecom, electric, 
+							and gas infrastructure solutions that power connectivity and 
+							progress. We aim to bridge urban and rural infrastructure gaps 
+							with cutting-edge technology and unyielding service quality.
+						</p>
+					</div>
+	
+					<div class="card" data-aos="fade-up" data-aos-duration="1000">
+						<div class="icon-wrapper">
+							<i class="bi bi-camera"></i>
+						</div>
+						<h5 class="card-title">Vision</h5>
+						<p class="card-text">
+							To become a national leader in smart infrastructure 
+							development, enabling India's digital and utility ecosystem to 
+							thrive through intelligent, integrated, and future-ready networks.
+						</p>
+					</div>
+				</div>
+	
+				<div class="grid-bottom">
+					<div class="card"  data-aos="fade-up" data-aos-duration="1000">
+						<!-- <div class="icon-wrapper">
+							<i class="bi bi-star"></i>
+						</div> -->
+						<div class="row">
+
+						<div class="col-12 col-md-4">
+							<div class="text-start">
+								<img src="../assets/images/imgs/value1.jpg" alt="" class="h-auto rounded"  data-aos="fade-right" data-aos-duration="1000">
+							</div>
+						</div>
+						<div class="col-12 col-md-8 ps-4"  data-aos="fade-left" data-aos-duration="1000">
+							<h5 class="card-title">Our Values</h5>
+							<ul class="values-list">
+							<li><span class="values-title">Ethics & Integrity:</span> Transparency in all we do</li>
+							<li><span class="values-title">Safety & Health:</span> Zero-compromise on well-being</li>
+							<li><span class="values-title">Quality-Driven:</span> Done right the first time, every time</li>
+							<li><span class="values-title">People-Focused:</span> Empowering teams with purpose and growth</li>
+							<li><span class="values-title">Innovation-Led:</span> Always improving, always advancing</li>
+							<li><span class="values-title">Collaborative Culture:</span> Inclusive, respectful, and goal-driven</li>
+							<li><span class="values-title">Sustainability:</span> Building responsibly for today and tomorrow</li>
+							</ul>
+						</div>
+					</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end Services section -->
+
+		<footer>
+			<div class="section-sm bg-light border-top">
+				<!-- Include Font Awesome in your <head> if not already included -->
+
+<div class="container p-0">
+  <div class="row g-4 p-0">
+
+    <!-- Logo & Location -->
+    <div class="col-6 col-sm-6 col-lg-2">
+      <img src="../assets/images/logo/Syntegrate Teleinfra LLP1.png" alt="" class="w-100 mb-2 rounded">
+      <p><i class="fas fa-location-dot text-syntegrate me-2"></i>Mumbai - India</p>
+    </div>
+
+    <!-- Group of Companies -->
+    <div class="col-6 col-sm-6 col-lg-3">
+      <h6 class="font-medium fw-bold text-uppercase">Group of Companies</h6>
+      <ul class="list-unstyled animate-links">
+        <li><i class="fas fa-building text-syntegrate me-2"></i><a href="#">Saibaba Infocom Pvt Ltd</a></li>
+        <li><i class="fas fa-building text-syntegrate me-2"></i><a href="#">Saibaba Communication Pvt Ltd</a></li>
+        <li><i class="fas fa-building text-syntegrate me-2"></i><a href="#">Synfocom Systems LLP</a></li>
+        <li><i class="fas fa-building text-syntegrate me-2"></i><a href="#">Om Enterprises</a></li>
+      </ul>
+    </div>
+
+    <!-- Our Brands -->
+    <div class="col-6 col-sm-6 col-lg-2">
+      <h6 class="font-medium fw-bold text-uppercase">Our Brands</h6>
+      <ul class="list-unstyled animate-links">
+        <li><i class="fas fa-globe text-syntegrate me-2"></i><a href="#">DR.COM</a></li>
+        <li><i class="fas fa-globe text-syntegrate me-2"></i><a href="#">Synfo.Shop</a></li>
+      </ul>
+    </div>
+
+    <!-- Our Presence -->
+    <div class="col-6 col-sm-6 col-lg-2">
+      <h6 class="font-medium fw-bold text-uppercase">Our Presence</h6>
+      <p><i class="fas fa-map-marker-alt text-syntegrate me-2"></i>Mumbai</p>
+      <p><i class="fas fa-map-marker-alt text-syntegrate me-2"></i>Navi Mumbai</p>
+      <p><i class="fas fa-map-marker-alt text-syntegrate me-2"></i>Thane</p>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="col-6 col-sm-6 col-lg-3">
+      <h6 class="font-medium fw-bold text-uppercase">Contact Info</h6>
+      <ul class="list-unstyled">
+        <li><i class="fas fa-location-dot text-syntegrate me-2"></i>1204/1205, 12th Floor, Hicons Corporate Lounge, 24th Road, Khar West, Mumbai - 400052</li>
+        <li><i class="fas fa-envelope text-syntegrate me-2"></i><a href="mailto:info@syntegrate.com">info@syntegrate.com</a></li>
+        <li><i class="fas fa-phone text-syntegrate me-2"></i><a href="tel:18002673866">1800-267-3866</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+<!-- end container -->
+			</div>
+			<div class="bg-black py-4">	
+				<div class="container">
+					<div class="row align-items-center g-2 g-lg-3">
+						<div class="col-12 col-md-6 text-center text-md-start">
+							<p>&copy; 2025 Syntegrate All Rights Reserved.</p>
+						</div>
+						<div class="col-12 col-md-6 text-center text-md-end">
+							<p class="">Developed By Digital Edge Technologies.</p>
+						</div>
+					</div><!-- end row -->
+				</div><!-- end container -->
+			</div>
+		</footer>
+
+		<!-- ***** JAVASCRIPTS ***** -->
+		<script src="../assets/plugins/jquery.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBi4SV0ZRVGoIDH2E00YtJ8Gvg67eaPG5A"></script>
+		<script src="../assets/plugins/plugins.js"></script>
+		<script src="../assets/js/functions.min.js"></script>
+		<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+		<script>
+  			AOS.init();
+		</script>
+	</body>
+
+</html>
