@@ -89,6 +89,8 @@
 		<!-- end Scroll to top button -->
 
 		<div class="section-xl bg-image parallax" data-bg-src="../assets/images/resume-bg.jpg">
+		<!-- <div class="section-xl bg-image parallax" data-bg-src="../assets/images/images/image8.jpg"> -->
+
 			<div class="bg-dark-06 section-divider-wavesOpacity-bottom">
 				<div class="container text-center">
 					<h1 class="fw-light m-0">Careers</h1>
@@ -101,22 +103,22 @@
 		<div class="row g-4 g-lg-5 align-items-start">
 			<div class="col-12 col-lg-6">
 				<img 
-  src="https://recruiseindia.com/assets/images/blog/single/how-asking-for-feedback-can-power-your-career-growth.jpg" 
-  class="rounded"  
-  data-aos="fade-right" 
-  data-aos-delay="500" 
-  data-aos-duration="1000"
-/>
+  					src="https://recruiseindia.com/assets/images/blog/single/how-asking-for-feedback-can-power-your-career-growth.jpg" 
+  					class="rounded"  
+  					data-aos="fade-right" 
+  					data-aos-delay="500" 
+  					data-aos-duration="1000"
+				/>
 
-						  </div>
+			</div>
 			<div class="col-12 col-lg-6">
-			  <h2 class="display-7 fw-bold mb-3 text-very-peri">Careers at Syntegrate Teleinfra LLP</h2>
-			  <p class="text-justify" data-aos="fade-up" data-aos-delay="500">Build the Future of Connectivity with Us
-                At Syntegrate Teleinfra LLP, we believe that our strength lies in our people. As a rapidly growing company in the telecom infrastructure sector, we’re always on the lookout for driven, skilled, and passionate individuals who are ready to make an impact.
-              </p>
+			  <h2 class="fs-4 fw-bold mb-3 text-syntegrate">Build the Future of Connectivity with Us</h2>
+			  <p class="text-justify" data-aos="fade-up" data-aos-delay="500">
+				At Syntegrate Teleinfra LLP, we believe that our strength lies in our people. As a rapidly growing company in the telecom infrastructure sector, we’re always on the lookout for driven, skilled, and passionate individuals who are ready to make an impact	
+				</p>
               <p class="my-2" data-aos="fade-up" data-aos-delay="800">
-                Whether you’re a seasoned industry professional or just beginning your career journey, Syntegrate offers an environment where innovation, collaboration, and growth thrive.
-              </p>
+				Whether you’re a seasoned industry professional or just beginning your career journey, Syntegrate offers an environment where innovation, collaboration, and growth thrive.
+			   </p>
 				
 			 
 			</div>
@@ -129,11 +131,11 @@
               <div class="row align-items-center text-center text-md-start">
                 <div class="col-md-7 mb-4 mb-md-0">
                   <h2 class="fw-bold text-very-peri mb-3">Join Our Talent Network</h2>
-                  <p class="mb-2 fs-5">
+                  <p class="mb-2">
                     If you're passionate about shaping the future of connectivity, we'd love to hear from you.
-                  </p>
-                  <p class="fs-6 text-muted">
-                    Even if there isn’t an open position right now, you can submit your resume and we’ll get in touch when a suitable opportunity arises.
+					</p>
+                  <p class="text-muted">
+					Even if there isn’t an open position right now, you can submit your resume and we’ll get in touch when a suitable opportunity arises.
                   </p>
                   <p class="mt-4">
                     <i class="fa-solid fa-envelope"></i>
@@ -239,8 +241,13 @@
 		<script src="../assets/js/functions.min.js"></script>
 		<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 		<script>
-  			AOS.init();
-		</script>
+			AOS.init({
+			  once: true,
+			  duration: 1000,
+			  offset: 120,
+			  easing: 'ease-in-out'
+			});
+		  </script>
 	</body>
 
 </html>
